@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://thumbs.dreamstime.com/b/green-grass-stadium-soccer-72589150.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.gate{
+    width: 40%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.gate img{
+    width: 100%;
+}
+
+.buffon{
+    width: 25%;
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    animation: buffon 10s linear infinite;
+}
+
+.buffon img{
+    width: 100%;
+}
+
+.ronaldo{
+    width: 20%;
+    position: absolute;
+    bottom: -20%;
+    left: 100%;
+    transform: rotate(90deg);
+    animation: ronaldo 10s linear infinite;
+}
+
+.ronaldo img{
+    width: 100%;
+}
+
+.carvajal{
+    width: 10%;
+    position: absolute;
+    top: 0;
+    left: 95%;
+    animation: carvajal 10s linear infinite;
+}
+
+.carvajal img{
+    width: 100%;
+}
+
+.ball{
+    width: 4%;
+    position: absolute;
+    top: 22%;
+    left: 92%;
+    animation: ball 10s linear infinite;
+}
+
+.ball img{
+    width: 100%;
+}
+
+@keyframes carvajal {
+    0%{
+        top: 0;
+        left: 95%;
+    }
+    50%{
+        top: 0;
+        left: 50%;
+    }
+    100%{
+        top: 0;
+        left: 50%;
+    }
+}
+
+@keyframes ball {
+    0%{
+        top: 22%;
+        left: 92%;
+    }
+    50%{
+        top: 22%;
+        left: 48%;
+    }
+    80%{
+        top: 55%;
+        left: 48%;
+    }
+    100%{
+        top: 55%;
+        left: 10%;
+    }
+}
+
+@keyframes ronaldo {
+    0%{
+        bottom: -20%;
+        left: 100%;
+    }
+    50%{
+        bottom: -10%;
+        left: 48%;
+    }
+    80%{
+        bottom: 0;
+        left: 40%;
+        transform: rotate(10deg);
+    }
+    100%{
+        bottom: -10%;
+        left: 48%;
+    }
+}
+
+@keyframes buffon {
+    0%
+    {
+        left: 10%;
+        bottom: 5%;
+        transform: rotate(0);
+    }
+    90%{
+        left: 15%;
+        bottom: 5%;
+        transform: rotate(0);
+    }
+    100%{
+        left: 10%;
+        bottom: 5%;
+        transform: rotate(70deg);
+    }
+}
